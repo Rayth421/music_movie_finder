@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Movie Finder</title>
+    <link rel="stylesheet" type="text/css" href="/workspaces/music_movie_finder/resources/styles.css">
+    <!-- path /Users/deelacey/Desktop/VS_github_repositories/music_movie_finder/index.html -->
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        input, button { padding: 10px; margin: 10px; }
+        #resultsContainer { margin-top: 20px; border: 1px solid #ccc; padding: 20px; display: none; }
+        #results { text-align: left; }
+    </style>
+</head>
+<body>
+    <h1>Find Movies Featuring a Song</h1>
+    <input type="text" id="songName" placeholder="Enter song name">
+    <input type="text" id="artistName" placeholder="Enter artist name (optional)">
+    <button onclick="searchMovies()">Search</button>
+    
+    <div id="resultsContainer" style="display: none;">
+        <h2>Search Results</h2>
+        <div id="results"></div>
+    </div>
+    
+    <script src="/workspaces/music_movie_finder/resources/js/script.js"></script>
+</body>
+</html>
